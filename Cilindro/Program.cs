@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Cilindro
 {
@@ -10,8 +11,7 @@ namespace Cilindro
             // Declarar as variáveis
             string altStr, radStr;
             float h, r;
-            float volume, areaSup;
-            float pi = 3.1415926f;
+            double volume, areaSup;
 
             //Input
             Console.WriteLine("Insira os valores para:\n");
@@ -27,16 +27,16 @@ namespace Cilindro
 
             //Operações
             //Volume = pi*r^2*h
-            volume = pi * (r * r) * h;
+            volume = Math.PI * Math.Pow(r, 2) * h;
 
             //Área Superfícial = 2*pi*r(r+h)
-            areaSup = 2 * pi * r * (r + h);
+            areaSup = 2 * Math.PI * r * (r + h);
 
 
             //Print Resultados
-            Console.WriteLine($"O Cilindro apresentado tem:");
+            Console.WriteLine($"\nO Cilindro apresentado tem:");
             Console.WriteLine($"Volume = {volume:f3};");
-            Console.WriteLine("Área Superficial = {0:f3}.", areaSup);
+            Console.WriteLine("Área Superficial = {0:f3}.\n", areaSup);
         }
     }
 }

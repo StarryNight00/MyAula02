@@ -36,15 +36,40 @@ namespace VariasStrings
             double xx = 0.12345;
             int ii = 18;
 
+            string s6 = "lolipop";
             string s9 = $"{xx:f2}";
             string s10 = $"{xx:p1}";
             string s11 = $"{ii:x}";
             string s12 = $"{ii:c}";
 
+            Console.WriteLine("...{0,15:f2}...", 160);
+            Console.WriteLine("...{0,-15:f2}...", s6);
             Console.WriteLine(s9);
             Console.WriteLine(s10);
             Console.WriteLine(s11);
             Console.WriteLine(s12);
+
+            Console.WriteLine("\n\nExercício 4 - bit a bit");
+            Console.WriteLine("\n1) x = i1 - 13 <=> x = 3 -(-8) = 11");
+            Console.WriteLine("\n2) x = i3 / i1 <=> x = -8 / 3 <=> x = -2");
+            Console.WriteLine("\n3) x += i2 <=> 2 += 1 = 3");
+            Console.WriteLine("\n4) x *= i1 <=> 2 *= 3 = 6");
+            Console.WriteLine("\n5) x %= i2 - 0b1001 <=> 2 %= 1 - 9 <=> 2 %= -8 = 2");
+            Console.WriteLine("\n6) x = i1 (3 = 0011) << 2 <=> x = 1100 = 12 = 'C'");
+            Console.WriteLine("\n7) x << = x <=> 0010 << = 2 <=> 1000 <=> 8");
+            Console.WriteLine("\n8) x &= 0x21AD ^ i1 = 0010 = 2");
+            Console.WriteLine("\n9) x = ~(i1(3=0010)|i3(-8=1110)) = 0");
+
+            Console.WriteLine("\n\nExercício 5 - booleanos");
+            Console.WriteLine("\n1) x = && false --> F");
+            Console.WriteLine("\n2) F");
+            Console.WriteLine("\n3) T");
+            Console.WriteLine("\n4) x &= f2 < f1 <=> x &= true --> T");
+            Console.WriteLine("\n5) x ^= !(f2 != f1) x ^= !(true) <=> true ^= false --> T");
+            Console.WriteLine("\n6) x |= !true ^ b1 <=> x |= false ^ true <=> x |= true --> T");
+            Console.WriteLine("\n7) F");
+            Console.WriteLine("\n8) T");
+            Console.WriteLine("\n9) T");
         }
     }
 }

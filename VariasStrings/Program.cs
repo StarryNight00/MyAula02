@@ -17,15 +17,20 @@ namespace VariasStrings
             Console.WriteLine(s2);
 
             Console.WriteLine("\n\nExercício 2");
+            int t = 0;
             int x = 2;
             string y = "papagaio";
             string w = "verde";
             string z = "azul";
 
-            string s3 = String.Format("Isto é x = {0} e isto é y = {1}", x, y);
+            string s3 = String.Format("\nIsto é x = {0} e isto é y = {1}", x, y);
+            string s4 = String.Format("\nEspero que todos saibam que {1} + {0} continua a ser {1}\n", t, x);
+
             Console.WriteLine(s3);
+            Console.WriteLine(s4);
             Console.WriteLine("O céu é {0}", w);
-            Console.WriteLine($"Mas dizem que pode ser {w + z}");
+            Console.WriteLine($"\tMas dizem que pode ser {w + z}");
+            Console.WriteLine($@"\nJá um {y + z} é algo que nunca vi.");
 
             Console.WriteLine("\n\nExercício 3");
             double xx = 0.12345;
